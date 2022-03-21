@@ -1,0 +1,3 @@
+---- unGetCmdLen Matches (3 in 2 files) ----
+CUARTSocketBQ40Z50::RecvDataFrmUART in cuartsocketBQ40z50.cpp : 	    printf("m_uartDataBuf.unDataPos %d---unGetCmdLen --------------------%d\r\n",m_uartDataBuf.unDataPos,unGetCmdLen);
+CUARTSocketBQ40Z50 in cuartsocketBQ40z50.h : 	UINT16 unGetCmdLen;

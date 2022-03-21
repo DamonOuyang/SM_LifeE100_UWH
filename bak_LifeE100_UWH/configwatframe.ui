@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>configWatFrame</class>
+ <widget class="QFrame" name="configWatFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1075</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <widget class="QWidget" name="watWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1075</width>
+     <height>520</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#watWidget
+{
+background-image: url(:/images/cfgWat_Bg.png);
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="wOkBut">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#wOkBut
+{
+background-image: url(:/images/cfgOkBut_Bt.png);
+}
+#wOkBut:pressed
+{
+background-image: url(:/images/cfgOkButDn_Bt.png);
+}
+#wOkBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="wEditBut">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#wEditBut
+{
+background-image: url(:/images/cfgEditBut_Bt.png);
+}
+#wEditBut:pressed
+{
+background-image: url(:/images/cfgEditButDn_Bt.png);
+}
+#wEditBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="wCancelBut">
+   <property name="geometry">
+    <rect>
+     <x>915</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#wCancelBut
+{
+background-image: url(:/images/cfgCancel_Bt.png);
+}
+#wCancelBut:pressed
+{
+background-image: url(:/images/cfgCancelDn_Bt.png);
+}
+#wCancelBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SystemSetDialog</class>
+ <widget class="QDialog" name="SystemSetDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#SystemSetDialog{
+background-color: rgb(38, 38, 44);
+}
+</string>
+  </property>
+  <widget class="QTabWidget" name="setTabWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>1200</width>
+     <height>740</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1200</width>
+     <height>605</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <italic>false</italic>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabWidget::pane
+{
+padding:-1px;
+top:-1px;
+}</string>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <property name="usesScrollButtons">
+    <bool>false</bool>
+   </property>
+   <property name="documentMode">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="dataTabDlg">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(38, 38, 44);</string>
+    </property>
+    <attribute name="title">
+     <string>数据</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="logTabDlg">
+    <property name="styleSheet">
+     <string notr="true">#logTabDlg
+{
+background-color: rgb(38, 38, 44);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>日志</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="cfgTabDlg">
+    <property name="styleSheet">
+     <string notr="true">#cfgTabDlg
+{
+background-color: rgb(38, 38, 44);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>配置</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="aboutTabDlg">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(38, 38, 44);</string>
+    </property>
+    <attribute name="title">
+     <string>关于</string>
+    </attribute>
+    <widget class="QTextEdit" name="pTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>1200</width>
+       <height>520</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pTextEdit
+{
+background-color: rgb(64, 64, 71);
+font-family:simhei;
+color: rgb(255,255,255);
+font:18px;
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="updateBut">
+     <property name="geometry">
+      <rect>
+       <x>1039</x>
+       <y>574</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#updateBut
+{
+background-image: url(:/images/update_Bt.png);
+}
+#updateBut:pressed
+{
+background-image: url(:/images/updateDn_Bt.png);
+}
+#updateBut:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>160</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AlmShowDialog</class>
+ <widget class="QDialog" name="AlmShowDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#AlmShowDialog
+{
+background-image: url(:/images/almShowWin_Bg.png);
+}</string>
+  </property>
+  <widget class="QPushButton" name="almWinBack">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>540</y>
+     <width>900</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#almWinBack:focus{
+outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/almShowBack_Icon.png</normaloff>:/images/almShowBack_Icon.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>900</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="almTabWidget">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>140</y>
+     <width>900</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabBar::tab 
+{	
+    min-width:450px;min-height:80px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+QTabBar::tab:selected
+{   
+     margin-left: 0px;
+     margin-right: -16px;
+	padding:0px;
+}
+QTabBar::tab:selected:Disabled
+{ 
+padding:0px;
+}
+
+QTabBar::tab:!selected 
+{
+
+	padding:0px;
+}
+QTabBar::tab:!selected:Disabled
+{
+
+	padding:0px;
+}
+
+QTabWidget::pane
+{
+	border: 0px;
+	top:0px;
+	left: 0px;
+}</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>450</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="usesScrollButtons">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="almRTTab">
+    <attribute name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/almRTTabDis_Icon.png</normaloff>
+      <normalon>:/images/almRTTabEn_Icon.png</normalon>
+      <disabledon>:/images/prePourDis_Icon.png</disabledon>:/images/almRTTabDis_Icon.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string/>
+    </attribute>
+    <widget class="QWidget" name="almRTWg" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>900</width>
+       <height>320</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#almRTWg{
+background-image: url(:/images/almShowTab_Bg.png);
+}
+</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="almDataTab">
+    <attribute name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/almDataTabDis_Icon.png</normaloff>
+      <normalon>:/images/almDataTabEn_Icon.png</normalon>
+      <disabledoff>:/images/pourDis_Icon.png</disabledoff>:/images/almDataTabDis_Icon.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string/>
+    </attribute>
+    <widget class="QWidget" name="almDataWg" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>900</width>
+       <height>320</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#almDataWg{
+background-image: url(:/images/almShowTab_Bg.png);
+}
+</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

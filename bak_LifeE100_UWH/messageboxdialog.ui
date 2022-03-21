@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MessageBoxDialog</class>
+ <widget class="QDialog" name="MessageBoxDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MessageBoxDialog
+{
+background-image: url(:/images/MessgBox/messgBox_Bg.png);
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>320</y>
+     <width>600</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label
+{
+color: rgb(255, 255, 255);
+font-family:simhei;
+font:bold;
+font:24px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>445</y>
+     <width>300</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#cancelButton:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/MessgBox/messgCancel_Bt.png</normaloff>:/images/MessgBox/messgCancel_Bt.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>300</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>445</y>
+     <width>300</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#okButton:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/MessgBox/messgOk_Bt.png</normaloff>:/images/MessgBox/messgOk_Bt.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>300</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okButton1">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>445</y>
+     <width>600</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#okButton1:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/MessgBox/messgBack_Bt.png</normaloff>:/images/MessgBox/messgBack_Bt.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>600</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

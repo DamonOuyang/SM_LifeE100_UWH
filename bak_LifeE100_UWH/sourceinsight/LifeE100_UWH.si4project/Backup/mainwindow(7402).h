@@ -1,0 +1,134 @@
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+
+#include "includes.h"
+#include <QMainWindow>
+#include <QTimer>
+#include <QLineEdit>
+#include "myLineEdit.h"
+
+
+namespace Ui {
+class MainWindow;
+}
+
+class LockScreenDialog;
+class MonThread;
+class SystemSetDialog;
+class CWorkThread;
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
+
+private slots:
+	void OnMonTabChanged(void);
+	void setValCanlce(void);
+    void setValString(QString strIn);
+    void on_gageSlider_valueChanged(int value);
+    void SecTimer();
+    void on_BPStrBtn_clicked(bool checked);
+    void on_wtrRomOnOffBt_clicked(bool checked);
+
+    void on_wtrTmpSetBt_clicked();
+
+	//灌注调节压力
+	void PourPressLEClick(void);
+	//预灌注调节速度
+	void PreSpeedLEClick(void);
+
+    void on_sysSetBtn_clicked();
+
+    void on_sysSetBackBtn_pressed();
+
+    void on_almShowBtn_clicked();
+
+    void on_almOnOffBtn_clicked(bool checked);
+
+    void on_unLockScreenBtn_clicked();
+
+private:
+    Ui::MainWindow *ui;
+	SystemSetDialog *m_pSysSteDlg;
+
+	LockScreenDialog *m_pLockScreenDlg;
+	
+    QTimer *m_pSecTmer;
+	QLineEdit*   m_pCurLineEdit;
+
+	MyLineEdit *m_pPourPressLE;
+	MyLineEdit *m_pPreSpeedLE;
+
+    void LoadConfigFile(void);
+	void CreateAlmFile(void);
+
+    //waterGageWg
+    int m_unSliderVal;//
+    int m_gageValLabelX;
+    int m_gageValLabelY;
+
+	bool m_bBPRunFlg;
+	bool m_bFlashAlmBtFlg;
+	bool m_bFlashFlg;
+	bool m_bAlmBeepFlg;
+
+	bool m_bSysReStrFlg;
+	UINT8 m_unFlashMainWinS;//刷新主页面
+
+	//刷新设置参数
+	void OnUpdParams(void);
+
+    //get system time
+    void FlashSysTime(void);
+
+    //灌注时长widget
+    void StartPourTime(void);
+	void SysAutoChangePress(UINT16 unPress);
+	void CheckAutoPress(void);
+	void SetBeepHour(void);
+	bool m_bPourStrFlg;//灌注开始标识
+	UINT8 m_unPourChangRePourSce;
+    bool  m_bHourBeepFlg;
+	UINT8 m_unHourTimer;
+	
+    //水浴温度
+    void InitWaterTmpWg(void);
+	void CheckWtrRomOnOffBt(void);
+	UINT8 m_unWatRunCheckSec;//检测水浴打开按钮延迟时间
+
+    //初始化水浴-压力widget
+    void InitWaterGageWg(void);
+	void FlashWaterRoomInfo(void);
+	UINT8 m_unWatRunState; //水浴运行状态
+
+	//血泵
+	void FlashPumpAInfo(void);
+	void FlashPumpVInfo(void);
+	void CheckPumpWaterState(void);
+	void CheckPourStop(void);
+	UINT8 m_unPumpRun; //泵运行状态
+	UINT8 m_unPourSta; //灌注状态
+
+	//告警按钮
+	void FlashAlmBt(void);
+	bool HasAlarm(void);
+	void CheckAlmBeep(void);
+	bool  m_bCloseBeepFlag;
+
+	//开机等待
+    UINT8 m_unCheckStartDly;
+	bool m_unStartCheckFlag;
+	QMessageBox *pCheckMsgBox;
+	QPushButton* pCheckBut;
+	void CheckStartInit(void);
+	void CheckStart(void);
+
+};
+
+extern CWorkThread*   g_pWorkThread;
+extern MonThread*     g_pMonThread;
+
+#endif // MAINWINDOW_H

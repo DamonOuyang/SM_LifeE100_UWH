@@ -1,6 +1,6 @@
-#include "CBridge.h"
-#include "CPort.h"
-#include "cpordlogical.h".h"
+﻿#include "cport.h"
+#include "cbridge.h"
+#include "cpordlogical.h"
 
 CBridge::CBridge(QObject *parent) : QObject(parent)
 {

@@ -1,0 +1,191 @@
+
+QLineEdit:read-only {
+ background-color: rgb(64,64,71);
+ min-height:30px;
+ font: 18px;
+
+ border-width:0;
+ border-style:outset;
+ color:rgb(255,255,255);
+ font-family:simhei;
+}
+QLineEdit{
+ min-height:30px;
+ font: 18px;
+ background-color: rgb(54,54,61);
+ border-width:0;
+ border-style:outset;
+ color:rgb(255,255,255);
+ font-family:simhei;
+}
+
+QAbstractButton 
+{
+ font: bold;
+ color: yellow;
+ font: 22px;
+ font-family:simhei;
+}
+QLabel
+{
+  font: bold;
+  color: white;
+  min-height:30px;
+  font: 20px;
+  font-family:simhei;
+}
+QTableView
+{
+ font:bold;
+ color: #FFFFFF;
+ font: 20px;
+ font-family:simhei;
+ border:1px solid #F0F0FF;
+}
+QScrollBar:vertical{
+width:40px;
+background: #36363D;
+border-radius:0px;
+margin:0px 0px 0px 0px;
+padding-top:0px;
+padding-bottom:0px;
+
+}
+QScrollBar::handle:vertical{
+background:#F0F0FF;
+width:40px;
+border: 0px solid #E5E5E5;
+min-height:40px;
+border-radius:0px;
+}
+
+QScrollBar:horizontal{
+    background:#36363D;
+    height:40px;
+    border-radius:0px;
+    margin:0px 0px 0px 0px;
+    padding-left:0px;
+    padding-right:0px;
+}
+QScrollBar::handle:horizontal{
+background:#F0F0FF;
+height:40px;
+border: 0px solid #E5E5E5;
+min-width:40px;
+border-radius:0px;
+}
+ 
+QScrollBar::sub-line
+{
+    border: none; 
+    background: none; 
+    height:0px;
+}
+QScrollBar::up-arrow
+{ 
+    subcontrol-origin: margin; 
+    height:0px;
+}
+
+QScrollBar::down-arrow
+{ 
+
+}
+QScrollBar::add-line
+{
+    border: none; 
+    background: none; 
+    height:0px;
+}
+
+
+QListView
+{
+ font:bold;
+ font: 24px;
+ font-family:simhei;
+}
+
+QTextEdit
+{
+ background-color: rgb(64, 64, 71);
+ font:bold;
+ font: 20px;
+ font-family:simhei;
+ color:rgb(255,255,255);
+}
+
+QAbstractButton
+{
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 lightblue, stop:0.5 darkblue);
+    border-width: 0px;
+    border-color: darkblue;
+    border-style: solid;
+    border-radius: 0;
+    padding: 0px;
+}
+
+QAbstractButton:pressed
+{
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0.5 darkblue, stop:1 lightblue);
+    border-color: beige;
+}
+
+QAbstractButton[enabled="false"] 
+{
+	background:gray;
+	color: rgb(0, 100, 255);
+}
+/*
+QTabBar::tab 
+{	min-width:80px;min-height:25px;color: white;
+	background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 lightblue, stop: 1 gray);
+	border: 1px solid;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding:5px;
+}
+QTabBar::tab:selected 
+{
+        
+        background-color: rgb(70,101,117);
+	color: rgb(0, 0, 255);
+	border: 2px solid;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding:5px;
+}
+QTabBar::tab:!selected 
+{
+	border: 1px solid;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding:5px;
+}
+*/
+QComboBox QAbstractItemView::item {
+ min-height:30px;
+ font: 20px;
+ color: #FFFFFF;
+ font-family:simhei;
+}
+QComboBox{
+ min-height:30px;
+ font: 20px;
+ color: #FFFFFF;
+ font-family:simhei;
+}
+
+QGroupBox {
+ border: 2px solid #0000EE;
+ border-radius: 5px;
+ margin-top: 1ex;
+ font:blod 14px;
+ font-family:simhei;
+ }
+ QGroupBox::title {
+ subcontrol-origin: margin;
+ subcontrol-position: top center;
+ padding: 0 3px;
+ }
+

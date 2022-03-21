@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UpChoseDevDialog</class>
+ <widget class="QDialog" name="UpChoseDevDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/Update/updateChoseDev_Bg.png);</string>
+  </property>
+  <widget class="QFrame" name="devChoseframe">
+   <property name="geometry">
+    <rect>
+     <x>445</x>
+     <y>100</y>
+     <width>390</width>
+     <height>560</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#devChoseframe
+{
+background-image: url(:/images/Update/ChoseFrom_Bg.png);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>350</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QPushButton" name="pushButton1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>350</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton1
+{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+
+#pushButton1:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/Update/dev01.png</normaloff>
+       <normalon>:/images/Update/dev02.png</normalon>:/images/Update/dev01.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>350</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>350</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton2
+{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+
+#pushButton2:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/Update/dev11.png</normaloff>
+       <normalon>:/images/Update/dev12.png</normalon>:/images/Update/dev11.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>350</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>240</y>
+       <width>350</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton3
+{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+
+#pushButton3:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/Update/dev21.png</normaloff>
+       <normalon>:/images/Update/dev22.png</normalon>:/images/Update/dev21.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>350</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>160</y>
+       <width>350</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton4
+{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+
+#pushButton4:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/Update/dev31.png</normaloff>
+       <normalon>:/images/Update/dev32.png</normalon>:/images/Update/dev31.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>350</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="upCancel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>480</y>
+      <width>195</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#upCancel
+{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+
+#upCancel:focus{outline: none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Update/upCancel_Bt.png</normaloff>:/images/Update/upCancel_Bt.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>195</width>
+      <height>80</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upOk">
+    <property name="geometry">
+     <rect>
+      <x>195</x>
+      <y>480</y>
+      <width>195</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#upOk
+{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+
+#upOk:focus{outline: none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Update/upOK_Bt.png</normaloff>:/images/Update/upOK_Bt.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>195</width>
+      <height>80</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

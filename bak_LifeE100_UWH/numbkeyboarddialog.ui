@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NumbKeyboardDialog</class>
+ <widget class="QDialog" name="NumbKeyboardDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#NumbKeyboardDialog
+{
+background-image: url(:/images/Keyboard/keyboardWindowBg.png);
+}</string>
+  </property>
+  <widget class="QFrame" name="entrFrame">
+   <property name="geometry">
+    <rect>
+     <x>445</x>
+     <y>123</y>
+     <width>390</width>
+     <height>514</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#entrFrame
+{
+background-image: url(:/images/Keyboard/keyEntr_Bg.png);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_n4">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>170</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/4up.png</normaloff>
+      <normalon>:/images/Keyboard/4dn.png</normalon>:/images/Keyboard/4up.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_n5">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>170</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/5up.png</normaloff>
+      <normalon>:/images/Keyboard/5dn.png</normalon>:/images/Keyboard/5up.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_n6">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>170</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/6up.png</normaloff>
+      <normalon>:/images/Keyboard/6dn.png</normalon>:/images/Keyboard/6up.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_n1">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>85</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/1up.png</normaloff>
+      <normalon>:/images/Keyboard/1dn.png</normalon>:/images/Keyboard/1up.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_n2">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>85</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/2up.png</normaloff>
+      <normalon>:/images/Keyboard/2dn.png</normalon>:/images/Keyboard/2up.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_n3">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>85</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/3up.png</normaloff>
+      <normalon>:/images/Keyboard/3dn.png</normalon>:/images/Keyboard/3up.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_n7">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>255</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/7up.png</normaloff>
+      <normalon>:/images/Keyboard/7dn.png</normalon>:/images/Keyboard/7up.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_n8">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>255</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/8up.png</normaloff>
+      <normalon>:/images/Keyboard/8dn.png</normalon>:/images/Keyboard/8up.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_n9">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>255</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/9up.png</normaloff>
+      <normalon>:/images/Keyboard/9dn.png</normalon>:/images/Keyboard/9up.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_n0">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>340</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/0up.png</normaloff>
+      <normalon>:/images/Keyboard/0dn.png</normalon>:/images/Keyboard/0up.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_period">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>340</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/dotup.png</normaloff>
+      <normalon>:/images/Keyboard/dotdn.png</normalon>:/images/Keyboard/dotup.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_backspace">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>340</y>
+      <width>120</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/delup.png</normaloff>
+      <normalon>:/images/Keyboard/deldn.png</normalon>:/images/Keyboard/delup.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>120</width>
+      <height>85</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Cancel">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>434</y>
+      <width>195</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>118</red>
+          <green>116</green>
+          <blue>108</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/entrCal.png</normaloff>:/images/Keyboard/entrCal.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>195</width>
+      <height>80</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ok">
+    <property name="geometry">
+     <rect>
+      <x>194</x>
+      <y>434</y>
+      <width>195</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>118</red>
+          <green>116</green>
+          <blue>108</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/Keyboard/entrOk.png</normaloff>:/images/Keyboard/entrOk.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>195</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_window">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>370</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>simhei</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lineEdit_window
+{
+background: transparent;
+color: rgb(128, 192, 255);
+font-family:simhei;
+font:bold;
+font:36px;
+
+}</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

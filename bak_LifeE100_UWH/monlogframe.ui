@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MonLogFrame</class>
+ <widget class="QFrame" name="MonLogFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <widget class="QTabWidget" name="logTabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>655</height>
+    </rect>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::West</enum>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tabMonData">
+    <attribute name="title">
+     <string>监控日志</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tabOperLog">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <attribute name="title">
+     <string>操作日志</string>
+    </attribute>
+    <widget class="QWidget" name="opreLogWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1075</width>
+       <height>520</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#opreLogWidget
+{
+background-image: url(:/images/opreLog_Bg.png);
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="goLastButton">
+     <property name="geometry">
+      <rect>
+       <x>286</x>
+       <y>555</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#goLastButton:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/opreLast_Bt.png</normaloff>:/images/opreLast_Bt.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>160</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>451</x>
+       <y>555</y>
+       <width>100</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="goNextButton">
+     <property name="geometry">
+      <rect>
+       <x>556</x>
+       <y>555</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#goNextButton:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/opreNext_Bt.png</normaloff>:/images/opreNext_Bt.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>160</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="goFirstButton">
+     <property name="geometry">
+      <rect>
+       <x>106</x>
+       <y>555</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#goFirstButton:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/opreFirst_Bt.png</normaloff>:/images/opreFirst_Bt.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>160</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="goEndButton">
+     <property name="geometry">
+      <rect>
+       <x>736</x>
+       <y>555</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#goEndButton:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/opreEnd_Bt.png</normaloff>:/images/opreEnd_Bt.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>160</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delAllButton">
+     <property name="geometry">
+      <rect>
+       <x>916</x>
+       <y>555</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#delAllButton:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/opreDelAll_Bt.png</normaloff>:/images/opreDelAll_Bt.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>160</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClosePumWinDialog</class>
+ <widget class="QDialog" name="ClosePumWinDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#ClosePumWinDialog
+{
+background: transparent;
+background-image: url(:/images/dialogAllWindow_Bg.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="closePumInfoWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>239</y>
+     <width>600</width>
+     <height>290</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#closePumInfoWidget{
+background-image: url(:/images/closePumWinBg.png);
+}</string>
+   </property>
+   <widget class="QPushButton" name="cancelPumButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>210</y>
+      <width>300</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#cancelPumButton:focus{
+outline: none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/close_cal_Icon.png</normaloff>:/images/close_cal_Icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>300</width>
+      <height>80</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closePumButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>210</y>
+      <width>300</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#closePumButton:focus{
+outline: none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/closePum_Bt_Icon.png</normaloff>:/images/closePum_Bt_Icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>300</width>
+      <height>80</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

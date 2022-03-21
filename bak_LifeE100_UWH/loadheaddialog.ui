@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoadHeadDialog</class>
+ <widget class="QDialog" name="LoadHeadDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#LoadHeadDialog
+{
+background-image: url(:/images/Head/loadHead_Bg.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="imgWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>1200</width>
+     <height>580</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#imgWidget
+{
+background: transparent;
+	border-image: url(:/images/Head/step1_img.png);
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loadLastBut">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>680</y>
+     <width>400</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#loadLastBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Head/last_Bt.png</normaloff>:/images/Head/last_Bt.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>400</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loadNextBut">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>680</y>
+     <width>800</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#loadNextBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Head/next_Bt.png</normaloff>:/images/Head/next_Bt.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>800</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loadOkBut">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>680</y>
+     <width>800</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#loadNextBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Head/Finish_Bt.png</normaloff>:/images/Head/Finish_Bt.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>800</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loseAllBut">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>680</y>
+     <width>400</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#loseAllBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/Head/loseAll_Bt.png</normaloff>:/images/Head/loseAll_Bt.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>400</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LogLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>800</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#LogLabel
+{
+background-image: url(:/images/LogOn_Win.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

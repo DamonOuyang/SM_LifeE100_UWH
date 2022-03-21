@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CConfigPanel</class>
+ <widget class="QFrame" name="CConfigPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <widget class="QTabWidget" name="cfgTabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>655</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabWidget::pane
+{
+top:0px;
+}</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::West</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>7</number>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>125</width>
+     <height>65</height>
+    </size>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideNone</enum>
+   </property>
+   <property name="usesScrollButtons">
+    <bool>false</bool>
+   </property>
+   <property name="documentMode">
+    <bool>false</bool>
+   </property>
+   <property name="tabsClosable">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="basicCfgTab">
+    <property name="styleSheet">
+     <string notr="true">#basicCfgTab
+{
+background-color: rgb(38, 38, 44);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>基本配置</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="almCfgTab">
+    <property name="styleSheet">
+     <string notr="true">#almCfgTab
+{
+background-color: rgb(38, 38, 44);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>告警配置</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="PourCfgTab">
+    <property name="styleSheet">
+     <string notr="true">#PourCfgTab
+{
+background-color: rgb(38, 38, 44);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>灌注配置</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="watModTab">
+    <property name="styleSheet">
+     <string notr="true">#watModTab
+{
+background-color: rgb(38, 38, 44);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>水浴模块</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="artModTab">
+    <property name="styleSheet">
+     <string notr="true">#artModTab
+{
+background-color: rgb(38, 38, 44);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>血泵动脉</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="veiModTab">
+    <property name="styleSheet">
+     <string notr="true">#veiModTab
+{
+background-color: rgb(38, 38, 44);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>血泵门脉</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="batModTab">
+    <property name="styleSheet">
+     <string notr="true">#batModTab
+{
+background-color: rgb(38, 38, 44);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>电池配置</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="testTab">
+    <property name="styleSheet">
+     <string notr="true">#testTab
+{
+background-color: rgb(38, 38, 44);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>调试信息</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

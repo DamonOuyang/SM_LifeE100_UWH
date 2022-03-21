@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>configAlmFrame</class>
+ <widget class="QFrame" name="configAlmFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1075</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <widget class="QPushButton" name="aOkBut">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#aOkBut
+{
+background-image: url(:/images/cfgOkBut_Bt.png);
+}
+#aOkBut:pressed
+{
+background-image: url(:/images/cfgOkButDn_Bt.png);
+}
+#aOkBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="aCancelBut">
+   <property name="geometry">
+    <rect>
+     <x>915</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#aCancelBut
+{
+background-image: url(:/images/cfgCancel_Bt.png);
+}
+#aCancelBut:pressed
+{
+background-image: url(:/images/cfgCancelDn_Bt.png);
+}
+#aCancelBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="almWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1075</width>
+     <height>520</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#almWidget
+{
+background-image: url(:/images/cfgAlm_Bg.png);
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="aEditBut">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#aEditBut
+{
+background-image: url(:/images/cfgEditBut_Bt.png);
+}
+#aEditBut:pressed
+{
+background-image: url(:/images/cfgEditButDn_Bt.png);
+}
+#aEditBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>configPourFrame</class>
+ <widget class="QFrame" name="configPourFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1075</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <widget class="QPushButton" name="pEditBut">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pEditBut
+{
+background-image: url(:/images/cfgEditBut_Bt.png);
+}
+#pEditBut:pressed
+{
+background-image: url(:/images/cfgEditButDn_Bt.png);
+}
+#pEditBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pCancelBut">
+   <property name="geometry">
+    <rect>
+     <x>915</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pCancelBut
+{
+background-image: url(:/images/cfgCancel_Bt.png);
+}
+#pCancelBut:pressed
+{
+background-image: url(:/images/cfgCancelDn_Bt.png);
+}
+#pCancelBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pOkBut">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pOkBut
+{
+background-image: url(:/images/cfgOkBut_Bt.png);
+}
+#pOkBut:pressed
+{
+background-image: url(:/images/cfgOkButDn_Bt.png);
+}
+#pOkBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="pourWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1075</width>
+     <height>520</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pourWidget
+{
+background-image: url(:/images/cfgPour_Bg.png);
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

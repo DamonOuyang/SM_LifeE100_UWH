@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LockScreenDialog</class>
+ <widget class="QDialog" name="LockScreenDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#LockScreenDialog
+{
+background: transparent;
+}</string>
+  </property>
+  <widget class="QPushButton" name="LockScreenBtn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>660</y>
+     <width>86</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#LockScreenBtn{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+#LockScreenBtn:focus{outline: none;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/images/locked_Icon.png</normaloff>:/images/locked_Icon.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>86</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boxButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>660</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#boxButton{
+background: transparent;
+padding:-1px;
+}
+#boxButton:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boxButton2">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>660</y>
+     <width>1161</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#boxButton2{
+background: transparent;
+padding:-1px;
+}
+#boxButton2:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

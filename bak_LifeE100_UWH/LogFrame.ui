@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LogFrame</class>
+ <widget class="QFrame" name="LogFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QTabWidget" name="logTabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>655</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::West</enum>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tabMonData">
+    <property name="styleSheet">
+     <string notr="true">#tabMonData
+{
+background-color: rgb(64, 64, 71);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>监控日志</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tabOperLog">
+    <property name="styleSheet">
+     <string notr="true">#tabOperLog
+{
+background-color: rgb(38, 38, 44);
+}</string>
+    </property>
+    <attribute name="title">
+     <string>操作日志</string>
+    </attribute>
+    <widget class="QPushButton" name="goNextButton">
+     <property name="geometry">
+      <rect>
+       <x>525</x>
+       <y>555</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#goNextButton
+{
+background-image: url(:/images/opreNext_Bt.png);
+}
+#goNextButton:pressed
+{
+background-image: url(:/images/opreNextDn_Bt.png);
+}
+#goNextButton:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>160</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>560</y>
+       <width>100</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="goFirstButton">
+     <property name="geometry">
+      <rect>
+       <x>75</x>
+       <y>555</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#goFirstButton
+{
+background-image: url(:/images/opreFirst_Bt.png);
+}
+#goFirstButton:pressed
+{
+background-image: url(:/images/opreFirstDn_Bt.png);
+}
+#goFirstButton:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>160</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="goEndButton">
+     <property name="geometry">
+      <rect>
+       <x>705</x>
+       <y>555</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#goEndButton
+{
+background-image: url(:/images/opreEnd_Bt.png);
+}
+#goEndButton:pressed
+{
+background-image: url(:/images/opreEndDn_Bt.png);
+}
+#goEndButton:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>160</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="goLastButton">
+     <property name="geometry">
+      <rect>
+       <x>255</x>
+       <y>556</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#goLastButton
+{
+background-image: url(:/images/opreLast_Bt.png);
+}
+#goLastButton:pressed
+{
+background-image: url(:/images/opreLastDn_Bt.png);
+}
+#goLastButton:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>160</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delAllButton">
+     <property name="geometry">
+      <rect>
+       <x>885</x>
+       <y>555</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#delAllButton
+{
+background-image: url(:/images/opreDelAll_Bt.png);
+}
+#delAllButton:pressed
+{
+background-image: url(:/images/opreDelAllDn_Bt.png);
+}
+#delAllButton:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>160</width>
+       <height>60</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delCurrButton">
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>520</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除当前</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="opreLogWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1075</width>
+       <height>520</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#opreLogWidget
+{
+background-image: url(:/images/opreLog_Bg.png);
+}</string>
+     </property>
+     <widget class="QGroupBox" name="beforeGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>39</y>
+        <width>537</width>
+        <height>480</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#beforeGroupBox
+{
+background: transparent;
+border:none;
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="laterGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>538</x>
+        <y>39</y>
+        <width>537</width>
+        <height>480</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#laterGroupBox
+{
+background: transparent;
+border:none;
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>configVeiFrame</class>
+ <widget class="QFrame" name="configVeiFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1075</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <widget class="QPushButton" name="veiCancelBut">
+   <property name="geometry">
+    <rect>
+     <x>915</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#veiCancelBut
+{
+background-image: url(:/images/cfgCancel_Bt.png);
+}
+#veiCancelBut:pressed
+{
+background-image: url(:/images/cfgCancelDn_Bt.png);
+}
+#veiCancelBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="veiWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1075</width>
+     <height>520</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#veiWidget
+{
+background-image: url(:/images/cfgPum_Bg.png);
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="veiEditBut">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#veiEditBut
+{
+background-image: url(:/images/cfgEditBut_Bt.png);
+}
+#veiEditBut:pressed
+{
+background-image: url(:/images/cfgEditButDn_Bt.png);
+}
+#veiEditBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="veiOkBut">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>555</y>
+     <width>160</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#veiOkBut
+{
+background-image: url(:/images/cfgOkBut_Bt.png);
+}
+#veiOkBut:pressed
+{
+background-image: url(:/images/cfgOkButDn_Bt.png);
+}
+#veiOkBut:focus{outline: none;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

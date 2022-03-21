@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetValDialog</class>
+ <widget class="QDialog" name="SetValDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#SetValDialog{
+background-image: url(:/images/setValWindowBg.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="setValWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>195</y>
+     <width>600</width>
+     <height>370</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#setValWidget
+{
+background-image: url(:/images/setValBg.png);
+}</string>
+   </property>
+   <widget class="QPushButton" name="cancelButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>290</y>
+      <width>300</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#cancelButton
+{
+background: transparent;
+background-image: url(:/images/setVal_cal_Icon.png);
+border-width:-1px;
+padding:-1px;
+}
+#cancelButton:focus{
+outline: none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="okButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>290</y>
+      <width>300</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#okButton
+{
+background: transparent;
+background-image: url(:/images/setVal_ok_Icon.png);
+border-width:-1px;
+padding:-1px;
+}
+#okButton:focus{
+outline: none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reduceButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>154</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#reduceButton
+{
+background: transparent;
+border-width:-1px;
+}
+
+#reduceButton:focus{outline: none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/setVal_redu_Icon.png</normaloff>:/images/setVal_redu_Icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>154</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#addButton
+{
+background: transparent;
+border-width:-1px;
+}
+#addButton:focus{
+outline: none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/setVal_add_Icon.png</normaloff>:/images/setVal_add_Icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>155</y>
+      <width>200</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lineEdit{
+background: transparent;
+color: rgb(255, 202, 234);
+font:bold;
+font:60px;
+}
+#lineEdit{
+border-width:0;border-style:outset
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="titleLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>600</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

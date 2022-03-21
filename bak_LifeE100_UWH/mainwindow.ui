@@ -1,0 +1,1929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="waterTmpWg" native="true">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>300</width>
+      <height>245</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#waterTmpWg{
+background-image: url(:/images/waterRoomTmpOff_Bg.png);
+}</string>
+    </property>
+    <widget class="QPushButton" name="wtrRomOnOffBt">
+     <property name="geometry">
+      <rect>
+       <x>187</x>
+       <y>28</y>
+       <width>66</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#wtrRomOnOffBt
+{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+
+#wtrRomOnOffBt:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/tmpOff_Icon.png</normaloff>
+       <normalon>:/images/tmpOn_Icon.png</normalon>
+       <disabledoff>:/images/tmpOff_Icon.png</disabledoff>:/images/tmpOff_Icon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>135</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="showTmpLabel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>166</y>
+       <width>170</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#showTmpLabel
+{
+font-family:simhei;
+color: rgb(255, 204, 143);
+font:36px;
+}</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="setWatTmpLE">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>170</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#setWatTmpLE{
+background: transparent;
+font-family:simhei;
+color: rgb(255,255,255);
+font:24px;
+}
+#setWatTmpLE{
+border-width:0;border-style:outset
+}</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="sysTmtLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>8</y>
+      <width>300</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#sysTmtLabel
+{
+font-family:simhei;
+color:rgb(255,255,255);
+font:24px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="waterGageWg" native="true">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>445</y>
+      <width>300</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#waterGageWg{
+image: url(:/images/waterRoomGage_Bg.png);
+}</string>
+    </property>
+    <widget class="QRoundProgressBar" name="WatRoundBar" native="true">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>54</red>
+           <green>54</green>
+           <blue>61</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>239</red>
+           <green>41</green>
+           <blue>41</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>71</red>
+           <green>71</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>38</red>
+           <green>38</green>
+           <blue>38</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>138</red>
+           <green>226</green>
+           <blue>52</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>85</red>
+           <green>85</green>
+           <blue>85</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>64</red>
+           <green>64</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>71</red>
+           <green>71</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Highlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>170</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>115</red>
+           <green>115</green>
+           <blue>115</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>54</red>
+           <green>54</green>
+           <blue>61</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>239</red>
+           <green>41</green>
+           <blue>41</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>71</red>
+           <green>71</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>38</red>
+           <green>38</green>
+           <blue>38</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>138</red>
+           <green>226</green>
+           <blue>52</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>85</red>
+           <green>85</green>
+           <blue>85</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>64</red>
+           <green>64</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>71</red>
+           <green>71</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Highlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>170</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>115</red>
+           <green>115</green>
+           <blue>115</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>71</red>
+           <green>71</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>54</red>
+           <green>54</green>
+           <blue>61</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>239</red>
+           <green>41</green>
+           <blue>41</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>71</red>
+           <green>71</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>38</red>
+           <green>38</green>
+           <blue>38</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>71</red>
+           <green>71</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>71</red>
+           <green>71</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>64</red>
+           <green>64</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>64</red>
+           <green>64</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>71</red>
+           <green>71</green>
+           <blue>71</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Highlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>50</red>
+           <green>100</green>
+           <blue>150</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>115</red>
+           <green>115</green>
+           <blue>115</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout"/>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="strTmtWg" native="true">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>300</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#strTmtWg{
+image: url(:/images/strTmt_Bg.png);
+}</string>
+    </property>
+    <widget class="QLabel" name="strTmtLabel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>53</y>
+       <width>300</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#strTmtLabel
+{
+   font-family:simhei;
+   color: rgb(255,255,255);
+   font:24px;
+}</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="monTabWidget">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>180</y>
+      <width>430</width>
+      <height>590</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabBar::tab 
+{	
+    min-width:215px;min-height:90px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+QTabBar::tab:selected
+{   
+     margin-left: 0px;
+     margin-right: -16px;
+	padding:0px;
+}
+QTabBar::tab:selected:Disabled
+{ 
+padding:0px;
+}
+
+QTabBar::tab:!selected 
+{
+
+	padding:0px;
+}
+QTabBar::tab:!selected:Disabled
+{
+
+	padding:0px;
+}
+
+QTabWidget::pane
+{
+	border: 0px;
+	top:0px;
+	left: 0px;
+}</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::South</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>215</width>
+      <height>90</height>
+     </size>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="prePourTab">
+     <attribute name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/prePourOff_Icon.png</normaloff>
+       <normalon>:/images/prePourOn_Icon.png</normalon>
+       <disabledoff>:/images/prePourOff_Icon.png</disabledoff>
+       <disabledon>:/images/prePourDis_Icon.png</disabledon>:/images/prePourOff_Icon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QWidget" name="prePourWg" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>430</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#prePourWg{
+	background-image: url(:/images/monDataPrePour_Bg.png);
+}
+#prePourWg:Disabled{
+background-image: url(:/images/monDataPrePourOff_Bg.png);
+}</string>
+      </property>
+      <widget class="QLabel" name="preFlowLb">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>170</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#preFlowLb
+{
+color: rgb(255, 202, 234);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="preTmpLb">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>295</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#preTmpLb
+{
+color: rgb(255, 202, 234);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="prePressLb">
+       <property name="geometry">
+        <rect>
+         <x>115</x>
+         <y>419</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#prePressLb
+{
+font-family:simhei;
+color:rgb(255,255,255);
+font:24px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="preSpeedSetLE">
+       <property name="geometry">
+        <rect>
+         <x>285</x>
+         <y>48</y>
+         <width>75</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#preSpeedSetLE{
+background: transparent;
+color:rgb(255,255,255);
+font-family:simhei;
+font:24px;
+}
+QLineEdit{
+border-width:0;border-style:outset
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="preSpeedLb">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>40</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#preSpeedLb
+{
+color: rgb(255, 202, 234);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="preFloRLb">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>419</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#preFloRLb
+{
+font-family:simhei;
+color:rgb(255,255,255);
+font:24px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pourTab">
+     <property name="maximumSize">
+      <size>
+       <width>814</width>
+       <height>562</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>814</width>
+       <height>562</height>
+      </size>
+     </property>
+     <attribute name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/pourOff_Icon.png</normaloff>
+       <normalon>:/images/pourOn_Icon.png</normalon>
+       <disabledoff>:/images/pourDis_Icon.png</disabledoff>
+       <disabledon>:/images/pourDis_Icon.png</disabledon>:/images/pourOff_Icon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QWidget" name="pourWg" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>430</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pourWg{
+background-image: url(:/images/monDataPour_Bg.png);
+
+}</string>
+      </property>
+      <widget class="QLabel" name="pourFlowLb">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>170</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourFlowLb
+{
+color: rgb(255, 202, 234);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pourTmpLb">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>295</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourTmpLb
+{
+color: rgb(255, 202, 234);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pourSpeedLb">
+       <property name="geometry">
+        <rect>
+         <x>115</x>
+         <y>419</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourSpeedLb
+{
+font-family:simhei;
+color:rgb(255,255,255);
+font:24px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="pourPressSetLE">
+       <property name="geometry">
+        <rect>
+         <x>285</x>
+         <y>48</y>
+         <width>75</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourPressSetLE{
+background: transparent;
+color:rgb(255,255,255);
+font-family:simhei;
+font:24px;
+}
+QLineEdit{
+border-width:0;border-style:outset
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pourPressLb">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>40</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourPressLb
+{
+color: rgb(255, 202, 234);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pourFloRLb">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>419</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourFloRLb
+{
+font-family:simhei;
+color:rgb(255,255,255);
+font:24px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="alarmWg" native="true">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>565</y>
+      <width>300</width>
+      <height>115</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#alarmWg
+{
+	border: 0px;
+	top:0px;
+	left: 0px;
+}</string>
+    </property>
+    <widget class="QLabel" name="almShowLb">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>300</width>
+       <height>115</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#almShowLb{
+background-image: url(:/images/alarm.png);
+   font-family:simhei;
+   font:bold;
+   font:26px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="almShowBtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>300</width>
+       <height>113</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#almShowBtn{
+background: transparent;
+border-width:-1px;
+padding:-1px
+}
+#almShowBtn:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="almOnOffBtn">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>700</y>
+      <width>86</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#almOnOffBtn{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+#almOnOffBtn:focus{outline: none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/alarmDis_Icon.png</normaloff>
+      <normalon>:/images/alarmOn_Icon.png</normalon>
+      <disabledoff>:/images/alarmOff_Icon.png</disabledoff>:/images/alarmDis_Icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>86</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sysSetBtn">
+    <property name="geometry">
+     <rect>
+      <x>254</x>
+      <y>700</y>
+      <width>86</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#sysSetBtn{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+#sysSetBtn:focus{outline: none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/sysSet_Icon.png</normaloff>:/images/sysSet_Icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>86</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="unLockScreenBtn">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>700</y>
+      <width>86</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#unLockScreenBtn{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+#unLockScreenBtn:focus{outline: none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/images/unLocking_Icon.png</normaloff>:/images/unLocking_Icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>86</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="arteryHeadWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>60</y>
+      <width>430</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#arteryHeadWidget{
+background-image: url(:/images/arteryHeadDis_Bg.png);
+}</string>
+    </property>
+    <widget class="QPushButton" name="BPStrBtn">
+     <property name="geometry">
+      <rect>
+       <x>302</x>
+       <y>27</y>
+       <width>66</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#BPStrBtn
+{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+
+#BPStrBtn:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/BP_Stop_Icon.png</normaloff>
+       <normalon>:/images/BP_Start_Icon.png</normalon>:/images/BP_Stop_Icon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>139</width>
+       <height>139</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="veinHeadWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>60</y>
+      <width>430</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#veinHeadWidget{
+background-image: url(:/images/veinHeadDis_Bg.png);
+}
+</string>
+    </property>
+    <widget class="QPushButton" name="BPStrBtnV">
+     <property name="geometry">
+      <rect>
+       <x>302</x>
+       <y>27</y>
+       <width>66</width>
+       <height>66</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#BPStrBtnV
+{
+background: transparent;
+border-width:-1px;
+padding:-1px;
+}
+
+#BPStrBtnV:focus{outline: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/vBP_Stop_Icon.png</normaloff>
+       <normalon>:/images/vBP_Start_Icon.png</normalon>:/images/vBP_Stop_Icon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>139</width>
+       <height>139</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="VmonTabWidget">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>180</y>
+      <width>430</width>
+      <height>590</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabBar::tab 
+{	
+    min-width:215px;min-height:90px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+QTabBar::tab:selected
+{   
+ 
+     margin-left: 0px;
+     margin-right: -16px;
+
+	padding:0px;
+}
+QTabBar::tab:selected:Disabled
+{ 
+
+padding:0px;
+}
+
+QTabBar::tab:!selected 
+{
+
+	padding:0px;
+}
+QTabBar::tab:!selected:Disabled
+{
+
+	padding:0px;
+}
+
+QTabWidget::pane
+{
+	border: 0px;
+	top:0px;
+	left: 0px;
+}</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::South</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>215</width>
+      <height>90</height>
+     </size>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="prePourTabV">
+     <attribute name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/prePourOff_Icon.png</normaloff>
+       <normalon>:/images/prePourOn_IconV.png</normalon>
+       <disabledoff>:/images/prePourDis_IconV.png</disabledoff>
+       <disabledon>:/images/prePourDis_IconV.png</disabledon>:/images/prePourOff_Icon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QWidget" name="prePourWgV" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>430</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#prePourWgV{
+background-image: url(:/images/monDataPrePour_Bg.png);
+}
+#prePourWgV:Disabled{
+background-image: url(:/images/monDataPrePourOff_Bg.png);
+}</string>
+      </property>
+      <widget class="QLabel" name="preFlowLbV">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>170</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#preFlowLbV
+{
+color: rgb(179, 228, 255);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="preTmpLbV">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>295</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#preTmpLbV
+{
+color: rgb(179, 228, 255);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="prePressLbV">
+       <property name="geometry">
+        <rect>
+         <x>115</x>
+         <y>419</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#prePressLbV
+{
+font-family:simhei;
+color:rgb(255,255,255);
+font:24px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="preSpeedSetLEV">
+       <property name="geometry">
+        <rect>
+         <x>285</x>
+         <y>48</y>
+         <width>75</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#preSpeedSetLEV{
+background: transparent;
+color:rgb(255,255,255);
+font-family:simhei;
+font:24px;
+}
+QLineEdit{
+border-width:0;border-style:outset
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="preSpeedLbV">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>40</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#preSpeedLbV
+{
+color: rgb(179, 228, 255);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="preFloRLbV">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>419</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#preFloRLbV
+{
+font-family:simhei;
+color:rgb(255,255,255);
+font:24px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pourTabV">
+     <property name="maximumSize">
+      <size>
+       <width>814</width>
+       <height>562</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>814</width>
+       <height>562</height>
+      </size>
+     </property>
+     <attribute name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/images/pourOff_Icon.png</normaloff>
+       <normalon>:/images/pourOn_IconV.png</normalon>
+       <disabledoff>:/images/pourDis_Icon.png</disabledoff>
+       <disabledon>:/images/pourDis_Icon.png</disabledon>:/images/pourOff_Icon.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string/>
+     </attribute>
+     <widget class="QWidget" name="pourWgV" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>430</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pourWgV{
+background-image: url(:/images/monDataPour_Bg.png);
+
+}</string>
+      </property>
+      <widget class="QLabel" name="pourFlowLbV">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>170</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourFlowLbV
+{
+color: rgb(179, 228, 255);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pourTmpLbV">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>295</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourTmpLbV
+{
+color: rgb(179, 228, 255);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pourSpeedLbV">
+       <property name="geometry">
+        <rect>
+         <x>115</x>
+         <y>419</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourSpeedLbV
+{
+font-family:simhei;
+color:rgb(255,255,255);
+font:24px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="pourPressSetLEV">
+       <property name="geometry">
+        <rect>
+         <x>285</x>
+         <y>48</y>
+         <width>75</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourPressSetLEV{
+background: transparent;
+color:rgb(255,255,255);
+font-family:simhei;
+font:24px;
+}
+QLineEdit{
+border-width:0;border-style:outset
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pourPressLbV">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>40</y>
+         <width>140</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourPressLbV
+{
+color: rgb(179, 228, 255);
+font-family:simhei;
+font:bold;
+font:48px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pourFloRLbV">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>419</y>
+         <width>70</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pourFloRLbV
+{
+font-family:simhei;
+color:rgb(255,255,255);
+font:24px;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="BatteryLogManage" name="batWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>12</y>
+      <width>35</width>
+      <height>17</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="batSocLabel">
+    <property name="geometry">
+     <rect>
+      <x>1116</x>
+      <y>6</y>
+      <width>38</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#batSocLabel
+{
+color: rgb(255, 255, 255);
+font-family:simhei;
+font:bold;
+font:16px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="chgIconLb">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>5</y>
+      <width>13</width>
+      <height>7</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#chgIconLb{
+image: url(:/images/chgLog_Icon.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="acLinkLog" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1203</x>
+      <y>12</y>
+      <width>36</width>
+      <height>17</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="batLinkLog" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>6</y>
+      <width>17</width>
+      <height>17</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QRoundProgressBar</class>
+   <extends>QWidget</extends>
+   <header>QRoundProgressBar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BatteryLogManage</class>
+   <extends>QWidget</extends>
+   <header>batterylogmanage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
